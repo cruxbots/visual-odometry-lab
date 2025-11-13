@@ -1,0 +1,147 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+build*
+!/build/.gitkeep
+!.gitkeep
+!.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.conda/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.project
+.pydevproject
+.settings/
+.metadata/
+.cproject
+
+# Qt Creator
+*.pro
+*.pro.user
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+CMakeLists.txt.user*
+.cmake/api/v1/query/cache-v2
+.cmake/api/v1/query/codemodel-v2
+.cmake/api/v1/query/cmakeFiles-v1
+
+# Compiled files
+*.o
+*.os
+*.a
+*.la
+*.lo
+*.dylib
+moc_*
+
+# Editor backups
+*.bak
+*#
+.#*
+*~
+*.swp
+.*.kate-swp
+.*.swo
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+*.cover
+
+# Data files (uncomment if you want to ignore data)
+# *.bag
+# *.bag.active
+# *.mp4
+# *.avi
+# *.mov
+# *.png
+# *.jpg
+# *.jpeg
+# *.tiff
+# *.tif
+# datasets/
+# data/
+# images/
+# videos/
+
+# Model files and checkpoints
+*.pth
+*.pt
+*.h5
+*.ckpt
+*.pb
+*.onnx
+*.tflite
+models/
+checkpoints/
+weights/
+
+# Logs
+*.log
+logs/
+*.out
+
+# Configuration files with sensitive data (uncomment if needed)
+# config/secrets.yaml
+# .env
+# *.key
+# *.pem
+
+# Clang
+.cache/
+.clang-format
+.clang-tidy
+
+# Resource marker (ROS 2)
+resource/
