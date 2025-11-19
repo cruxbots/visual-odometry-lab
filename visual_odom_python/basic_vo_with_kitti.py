@@ -211,7 +211,7 @@ def plot_trajectory(trajectory: np.ndarray) -> None:
     ax.set_title('Visual Odometry Trajectory')
     plt.show()
 
-def main(img_path_list: List[Path]) -> None:
+def main_kitti(img_path_list: List[Path]) -> None:
     """Main visual odometry pipeline.
 
     Processes a sequence of images to estimate camera trajectory:
@@ -252,8 +252,8 @@ def main(img_path_list: List[Path]) -> None:
 
         # Visualize matches (top 30 best matches)
         img_comp = cv2.drawMatches(
-            img1, kp1,
             img2, kp2,
+            img1, kp2,
             matches[:30],
             None,
             flags=cv2.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS,
@@ -294,4 +294,4 @@ if __name__ == '__main__':
     
     # Process first 40 images (adjust as needed)
     # Using fewer images helps debug and reduces computation time
-    main(img_list[:40])
+    main_kitti(img_list[:40])
